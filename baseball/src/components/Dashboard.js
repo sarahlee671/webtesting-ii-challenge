@@ -3,18 +3,20 @@ import React from "react";
 const Dashboard = props => {
     return(
         <div>
-            <button>
+            <button onClick={props.addStrike}>
                 strike
             </button>
-            <button>
+            <button onClick={props.addBall}>
                 ball
             </button>
-            <button>
+            <button onClick={props.foulChange}>
                 foul
             </button>
-            <button>
+            <button onClick={props.hitReset}>
                 hit
             </button>
         </div>
     )
 }
+
+export default Dashboard;
